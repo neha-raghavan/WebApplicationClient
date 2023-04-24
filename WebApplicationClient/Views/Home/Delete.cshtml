@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model WebApplicationClient.Models.Employee
+<div>
+    <h2>Delete Employee</h2>
+
+    <form method="POST" enctype="multipart/form-data" asp-controller="Home" asp-action="Delete">
+
+        @* <div asp-validation-summary="All"></div>  *@
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="FirstName">First Name</label>
+                <input type="text" class="form-control mb-3" asp-for="FirstName" placeholder="Enter Employee First Name">
+                <span asp-validation-for="FirstName" class="aler-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="LastName">Last Name</label>
+                <input type="text" class="form-control mb-3" asp-for="LastName" placeholder="Enter Employee Last Name">
+                <span asp-validation-for="LastName" class="aler-danger"></span>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label asp-for="Email">Email</label>
+                <input type="text" class="form-control mb-3" asp-for="Email" placeholder="Enter Email">
+                <span asp-validation-for="Email" class="aler-danger"></span>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label asp-for="Phone">Phone</label>
+                <input type="text" class="form-control mb-3" asp-for="Phone" placeholder="Enter Phone">
+                <span asp-validation-for="Phone" class="aler-danger"></span>
+            </div>
+
+
+            <div class="form-group col-md-6">
+                <label asp-for="Salary">Salary</label>
+                <input type="text" class="form-control mb-3" asp-for="Salary" placeholder="Enter Salary">
+                <span asp-validation-for="Salary" class="aler-danger"></span>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label asp-for="HireDate">Joining Date</label>
+                <input type="date" class="form-control mb-3" asp-for="HireDate" placeholder="Enter Joining Date">
+                <span asp-validation-for="HireDate" class="aler-danger"></span>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label asp-for="Department">Department</label>
+                <input type="text" class="form-control mb-3" asp-for="Department" placeholder="Enter Department">
+                <span asp-validation-for="Department" class="aler-danger"></span>
+            </div>
+        </div>
+        <input type="submit" class="btn btn-lg btn-primary p-2" value="Submit" />
+    </form>
+
+</div>

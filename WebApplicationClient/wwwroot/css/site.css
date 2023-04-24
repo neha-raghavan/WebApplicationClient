@@ -1,0 +1,80 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: linear-gradient(to bottom right, #E37383,#1E90FF);
+}
+#boxClass {
+    background-color: white;
+    padding: 1%;
+    border: 1px solid gray;
+    margin: 5%;
+    border-radius: 25px;
+   
+}
+.alignClass {
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 2%;
+    width: 50%;
+    background-color: white;
+}
+.headingClass{
+    text-align:center;
+}
+#btnSave {
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #1E90FF, #E37383);
+    padding: 10px 30px;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#formClass {
+    text-align: center;
+}
+#addNew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(171, 206, 161, 0.35);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    margin: 5%;
+    
+}
+.fa-plus {
+    background-color: #abcea1;
+    padding: 3px;
+    border-radius: 3px;
+   
+}
+#posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    gap: 25px;
+}
+
+#msg {
+    color: red;
+}
